@@ -1,0 +1,586 @@
+body {
+    color: #112c77;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+}
+
+a {
+    display: inline-block;
+    color: #112c77;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.img100 {
+    width: 100%;
+   height: auto;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;  
+    z-index: 100;
+}
+
+.navigation a img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    left: -27px;
+    position: relative;
+}
+
+.navigation a svg {
+    width: 18px;
+    height: 18px;
+    fill: #112c77;
+}
+
+.contnav {
+    margin-top: 70px;
+}
+
+.phone {
+    padding: 13px 70px 13px 25px;
+    background: #d9cb56;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 30px;  
+    position: relative;
+}
+
+.phone svg {
+    width: 10px;
+    height: 10px;
+    top: 15px;
+    right: 14px;
+    fill: #112c77;
+    position: absolute;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.phone::after {
+    background: #fff;
+    height: 51px;
+    width: 1px;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 47px;
+}
+
+.phone:hover {
+    background: #112c77;
+    color: #fff; 
+}
+
+
+.phone:hover > svg {
+    fill: #fff;
+    transform: rotate(180deg); 
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+
+.vh100 {
+    height: 100vh;
+}
+
+header {
+    background: url('../img/logo-star-invest2.png') top right no-repeat;
+    background-size: 58%;
+}
+
+.primary-btn svg {
+    width: 30px;
+    height: 30px;
+    fill: #112c77;
+    right: 60px;
+    top: 59px;
+    display: inline-block;    
+    cursor: pointer;
+}
+
+.offcanvas {
+    background: #112c77;
+    z-index: 100;
+}
+
+.text-reset svg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 58px;
+    right: 20px;
+    fill: #fff!important;
+    cursor: pointer;
+}
+
+.body-offcanvas ul {
+    list-style: none;
+}
+
+.body-offcanvas ul li {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.body-offcanvas ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.body-offcanvas ul li a:hover {
+    color: #d9cb56;
+}
+
+.body-offcanvas ul li a svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}
+
+.body-offcanvas ul li a svg:hover {
+    fill: #d9cb56;
+}
+
+.instagram {
+    margin-left: 30px;
+}
+
+.slider .container {
+    position: absolute;
+    bottom: -100px;
+    left: -1%;
+    z-index: 5;
+    content: "";
+}
+
+.box-small1 {
+    padding: 94px 30px 36px 30px;;
+    background: #112c77;
+    color: #d9cb56;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 31px;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.box-small1 span {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header div a h2 {
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+}
+
+.box-small1 h2::before {
+    background: #d9cb56;
+    position: relative;
+    top: 0px;
+    width: 8px;
+    height: 20px;
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.box-small1:hover {
+    background: #d9cb56;
+    color: #112c77;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.box-small1:hover > h2::before { 
+    background: #112c77;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.box-small2 {
+    padding: 94px 30px 36px 30px;;
+    background: #d9cb56;
+    color: #112c77;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 31px;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.box-small2 span {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.box-small2 h2::before {
+    background: #112c77;
+    position: relative;
+    top: 0px;
+    width: 8px;
+    height: 20px;
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.box-small2:hover {
+    background: #112c77;
+    color: #d9cb56;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.box-small2:hover > h2::before { 
+    background: #d9cb56;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+header h1 {
+    font-size: 48px;
+    position: relative;
+    right: 8px;
+}
+
+header h1 span {
+    font-weight: 700;
+}
+
+header h1::before {
+    background: #d9cb56;
+    position: relative;
+    top: 2px;
+    width: 11px;
+    height: 38px;
+    content: "";
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.box-small1 svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    margin-left: 49px;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.box-small1:hover > .d-flex svg {
+    fill: #112c77;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    transform: rotate(-180deg);
+}
+
+.box-small2 svg {
+    width: 20px;
+    height: 20px;
+    fill: #112c77;
+    margin-left: 49px;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.box-small2:hover > .d-flex svg {
+    fill: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    transform: rotate(-180deg);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.back-grey {
+    background: url(../img/backgroundgrey.png) top left no-repeat;
+    background-size: 74% 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.section1 {
+    padding: 0px;
+}
+
+section h2 {
+    font-weight: 400;
+}
+
+section h2 span {
+    font-weight: 700;
+}
+
+section {
+    padding: 90px 0px;
+}
+
+section h2 {
+    position: relative;
+}
+
+section h2::before {
+    background: #d9cb56;
+    position: relative;
+    top: 0px;
+    width: 8px;
+    height: 20px;
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+}
+
+section h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+section h3 span {
+    font-weight: 700;
+}
+
+.btntrans {
+    padding: 13px 44px 13px 21px;;
+    background: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 30px;  
+    position: relative;
+    margin-top: 30px;
+    border: 1px solid #b7bfd6;; 
+}
+
+.btntrans svg {
+    width: 20px;
+    height: 20px;
+    fill: #112c77;
+    position: relative;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    right: -31px;
+}
+
+.btntrans::after {
+    background: #b7bfd6;
+    height: 51px;
+    width: 1px;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 47px;
+}
+
+.btntrans:hover {
+    background: #112c77;
+    color: #fff; 
+}
+
+.btntrans:hover > svg {
+    fill: #fff;
+    transform: rotate(180deg); 
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.imgl {
+    object-fit: cover;
+    width: 100%;
+    height: 362px;
+}
+
+.realistions .col-md-4 {
+    padding: 0px 55px;
+}
+
+.realistions h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.realistions {
+    background: url('../img/backgroundgrey.png') top right no-repeat;
+    background-size: 74% 100%;
+    padding: 90px 0px;
+    margin-bottom: 90px;
+}
+
+.footer {
+    padding: 60px 0px 60px 0px;
+    background: url('https://www.star-invest.pl/wp-content/uploads/2021/12/star-invest-glowna3.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.footer p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.footer h2 {
+    font-weight: 0;
+    position: relative;
+    color: #fff;
+    font-size: 27px;
+}
+
+.footer h2::before {
+    background: #d9cb56;
+    position: relative;
+    top: 0px;
+    width: 8px;
+    height: 20px;
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.btntrans1 {
+    color: #fff; 
+    padding: 13px 44px 13px 21px;;
+    background: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 30px;  
+    position: relative;
+    margin-top: 30px;
+    border: 1px solid #b7bfd6;; 
+}
+
+.btntrans1 svg {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    right: -31px;
+    fill: #fff;
+}
+
+.btntrans1::after {
+    background: #b7bfd6;
+    height: 50px;
+    width: 1px;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 47px;
+}
+
+.btntrans1:hover {
+    border: transparent;
+    background: #112c77;
+    color: #fff;
+}
+
+.btntrans1:hover > svg {
+    fill: #fff;
+    transform: rotate(180deg); 
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.footer1 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.footer1 p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer1 p span {
+    font-weight: 600;
+}
+
+.footer1 div a svg {
+    width: 20px;
+    height: 20px;
+    fill: #d9cb56;
+    margin-left: 15px;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.footer1 div a svg:hover {
+    fill: #112c77; 
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.footer2 {
+    border-top: 1px solid #b7bfd6;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.footer2 p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer2 a {
+    text-decoration: none;
+    color: #112c77;
+}
+
+.footer2 a:hover {
+    color: #d9cb56;
+}
