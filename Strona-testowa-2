@@ -1,1 +1,937 @@
+<!DOCTYPE html>
+<html lang="pl">
 
+<head>
+    <meta name="author" content="Lewi">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tytuł naszej strony</title>
+    <meta name="description" content="To jest kurs odnośnie towrzenia stron internetowych">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img class="whitelogo" src="img/logo-white.svg" /><img class="blacklogo"
+                src="img/logo-black.svg" /></a>
+        <a class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-auto">
+                <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="#">Demo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <a href="#">
+                    <svg class="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                    </svg>
+                </a>
+                <a class="arrow d-flex" href="#">Get started
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path
+                            d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z" />
+                    </svg>
+                </a>
+                <a class="sun" href="#">
+                    <span>
+                        <svg width="22" height="22" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.93997 1.84497V2.29997V1.84497ZM5.93997 9.57997V10.035V9.57997ZM10.035 5.93997H9.57997H10.035ZM2.29997 5.93997H1.84497H2.29997ZM8.83559 8.83559L8.51391 8.51391L8.83559 8.83559ZM3.36604 3.36604L3.04435 3.04435L3.36604 3.36604ZM8.83559 3.04435L8.51391 3.36604L8.83559 3.04435ZM3.36604 8.51391L3.04435 8.83559L3.36604 8.51391ZM7.75997 5.93997C7.75997 6.42267 7.56822 6.88559 7.22691 7.22691C6.88559 7.56822 6.42267 7.75997 5.93997 7.75997C5.45728 7.75997 4.99435 7.56822 4.65304 7.22691C4.31172 6.88559 4.11997 6.42267 4.11997 5.93997C4.11997 5.45728 4.31172 4.99435 4.65304 4.65304C4.99435 4.31172 5.45728 4.11997 5.93997 4.11997C6.42267 4.11997 6.88559 4.31172 7.22691 4.65304C7.56822 4.99435 7.75997 5.45728 7.75997 5.93997V5.93997Z"
+                                stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<header>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background: url(img/slider-1.jpg) center center no-repeat">
+                <div class="container text-start d-flex align-items-center">
+                    <div>
+                        <span class="subtitle">Creative Agency</span>
+                        <h1>We Are a Bunch of Future <br /> Holders, Making The Digital <br /> World Better.</h1>
+                        <p>A full-service digital marketing firm that specialises in human-centered experiences. We
+                            bring <br /> companies and people together.</p>
+                        <a class="arrow2" href="#">Get started
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path
+                                    d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background: url(img/slider-2.jpg) center center no-repeat">
+                <div class="container text-start d-flex align-items-center">
+                    <div>
+                        <span class="subtitle">Creative Agency</span>
+                        <h2>We Build Global<br />Experiences That<br />Customers Love</h2>
+                        <p>A full-service digital marketing firm that specialises in human-centered experiences. We
+                            bring <br /> companies and people together.</p>
+                        <a class="arrow2" href="#">Get started
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path
+                                    d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-pad">
+            <div class="button-next"></div>
+        </div>
+        <div class="button-pad2">
+            <div class="button-prev"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</header>
+
+<section class="section-1">
+    <!-- Swiper2 -->
+    <div class="container">
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/lyka-pub.svg" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/lyka-pub.svg" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/lyka-pub.svg" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/lyka-pub.svg" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/lyka-pub.svg" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/lyka-pub.svg" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/lyka-pub.svg" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/lyka-pub.svg" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/lyka-pub.svg" />
+                    </div>
+                </div>
+            </div>
+            <div class="button-pad-small">
+                <div class="button-next-small"></div>
+            </div>
+            <div class="button-pad2-small">
+                <div class="button-prev-small"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-2">
+    <div class="container d-flex">
+        <div class="text-center align-items-center">
+            <h2>Services We Provide</h2>
+            <p>Blueket overcomes challenges, achieves results, and adds value to our clients and partners.<br /> Take a
+                look at some of our clients' success stories.</p>
+            <div class="row box-all">
+                <div class="col-md-3 boxpad">
+                    <div class="box1">
+                        <img src="img/app.png" />
+                        <h3>App<br /> Development</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 boxpad">
+                    <div class="box2">
+                        <img src="img/app.png" />
+                        <h3>App<br /> Development</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 boxpad">
+                    <div class="box3">
+                        <img src="img/app.png" />
+                        <h3>App<br /> Development</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 boxpad">
+                    <div class="box4">
+                        <img src="img/app.png" />
+                        <h3>App<br /> Development</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-3">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <span class="subtitle3">Who are we</span>
+                <h2>Hire the Best Web and Mobile<br /> App Developers For Your Project</h2>
+                <p>Expertise helps Blueket tackle the world's most difficult challenges. Blueket provides digital
+                    products for worldwide brands on the web, mobile, and linked platforms. Expertise helps Blueket
+                    tackle the world's most difficult challenges. Blueket provides digital products for worldwide brands
+                    on the web, mobile, and linked platforms.
+                    <br /><br />
+                    Expertise helps Blueket tackle the world's most difficult challenges. Blueket provides digital
+                    products for worldwide brands on the web.
+                </p>
+                <div class="d-flex">
+                    <a class="arrow3" href="#">Get started</a>
+                    <a class="play" href="#"><img src="img/play-solid.svg" /></a>
+                    <span>Watch Video</span>
+                </div>
+            </div>
+            <div class="col-md-5 d-flex relative">
+                <div class="gradient1"></div>
+                <div class="gradient2"></div>
+                <div class="photobox1 relative">
+                    <img src="img/office-3.jpg" />
+                </div>
+                <div class="photobox2 relative">
+                    <img src="img/office-4.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Latest Projects</h2>
+                <a class="arrow0" href="#">View all projects
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path
+                            d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <p>Blueket overcomes challenges, achieves results, and adds value to our clients and partners. Take a
+                    look at some of our clients' success stories. Take a look at some of our clients' success stories.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper3 -->
+    <div class="swiper mySwiper3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div>
+                    <img class="img100" src="img/work-4.jpg" />
+                    <h3>Ruppay Investments</h3>
+                    <p>iOs development</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img class="img100" src="img/work-3.jpg" />
+                    <h3>Ruppay Investments</h3>
+                    <p>iOs development</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img class="img100" src="img/work-4.jpg" />
+                    <h3>Ruppay Investments</h3>
+                    <p>iOs development</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img class="img100" src="img/work-3.jpg" />
+                    <h3>Ruppay Investments</h3>
+                    <p>iOs development</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img class="img100" src="img/work-4.jpg" />
+                    <h3>Ruppay Investments</h3>
+                    <p>iOs development</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img class="img100" src="img/work-3.jpg" />
+                    <h3>Ruppay Investments</h3>
+                    <p>iOs development</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img class="img100" src="img/work-4.jpg" />
+                    <h3>Ruppay Investments</h3>
+                    <p>iOs development</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img class="img100" src="img/work-3.jpg" />
+                    <h3>Ruppay Investments</h3>
+                    <p>iOs development</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img class="img100" src="img/work-4.jpg" />
+                    <h3>Ruppay Investments</h3>
+                    <p>iOs development</p>
+                </div>
+            </div>
+        </div>
+        <div class="button-pad-small2">
+            <div class="button-next-small2"></div>
+        </div>
+        <div class="button-pad2-small2">
+            <div class="button-prev-small2"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section-5 relative">
+    <div class="d-flex justify-content-center gradientbox">
+        <div class="gradient3"></div>
+    </div>
+    <div class="container index2">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center align-items-center">
+                    <h2>Our Workplace Technologies</h2>
+                    <h3>Our Workplace Technologies" section of the Human Resources Department's <br /> website.</h3>
+                    <p>Our Workplace Technologies Center is focused on working with business leaders to help them
+                        maximize<br /> their productivity, reduce costs and meet social needs in the 21st century. Our
+                        Workplace Technologies <br /> Center is focused on working with business leaders to help them
+                        maximize their productivity, reduce costs<br /> and meet social needs in the 21st century.</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper mySwiper4">
+            <div class="swiper-wrapper text-center align-items-center">
+                <div class="swiper-slide">
+                    <div>
+                        <img class="img100" src="img/Google-cloud.svg" />
+                    </div>
+                    <p>Google cloud</p>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img class="img100" src="img/Google-cloud.svg" />
+                    </div>
+                    <p>Google cloud</p>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img class="img100" src="img/Google-cloud.svg" />
+                    </div>
+                    <p>Google cloud</p>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img class="img100" src="img/Google-cloud.svg" />
+                    </div>
+                    <p>Google cloud</p>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img class="img100" src="img/Google-cloud.svg" />
+                    </div>
+                    <p>Google cloud</p>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img class="img100" src="img/Google-cloud.svg" />
+                    </div>
+                    <p>Google cloud</p>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img class="img100" src="img/Google-cloud.svg" />
+                    </div>
+                    <p>Google cloud</p>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img class="img100" src="img/Google-cloud.svg" />
+                    </div>
+                    <p>Google cloud</p>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img class="img100" src="img/Google-cloud.svg" />
+                    </div>
+                    <p>Google cloud</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center gradientbox2">
+        <div class="gradient4"></div>
+    </div>
+</section>
+
+<section class="section-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex relative">
+                <div class="gradient1a"></div>
+                <div class="gradient2a"></div>
+                <img class="photobox1a" src="img/developer.jpg" />
+                <img class="photobox2a" src="img/developer-2.jpg" />
+                <img class="photobox3a" src="img/computer.jpg" />
+                <img class="photobox4a" src="img/compute-1.jpg" />
+            </div>
+            <div class="col-md-6">
+                <span class="subtitle4">Why Blueket?</span>
+                <h2>Why Hire The Blueket As Your Mobile App<br />Development Company?</h2>
+                <div class="d-flex listbox">
+                    <div class="listboximg">
+                        <img src="img/experience.png" />
+                    </div>
+                    <div>
+                        <h3>Experienced and Skilled Resources</h3>
+                        <p>Blueket is a company that specialises in risk management and general safety. We will bring
+                            value to your business farm while also ensuring.</p>
+                    </div>
+                </div>
+                <div class="d-flex listbox">
+                    <div class="listboximg">
+                        <img src="img/experience.png" />
+                    </div>
+                    <div>
+                        <h3>Experienced and Skilled Resources</h3>
+                        <p>Blueket is a company that specialises in risk management and general safety. We will bring
+                            value to your business farm while also ensuring.</p>
+                    </div>
+                </div>
+                <div class="d-flex listbox">
+                    <div class="listboximg">
+                        <img src="img/experience.png" />
+                    </div>
+                    <div>
+                        <h3>Experienced and Skilled Resources</h3>
+                        <p>Blueket is a company that specialises in risk management and general safety. We will bring
+                            value to your business farm while also ensuring.</p>
+                    </div>
+                </div>
+                <div class="d-flex listbox">
+                    <div class="listboximg">
+                        <img src="img/experience.png" />
+                    </div>
+                    <div>
+                        <h3>Experienced and Skilled Resources</h3>
+                        <p>Blueket is a company that specialises in risk management and general safety. We will bring
+                            value to your business farm while also ensuring.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-7 relative">
+    <div class="container">
+        <p class="subtitle5">Review/Feedback</p>
+        <h2>Happy Clients With Digital Transformation</h2>
+        <!-- Swiper5 -->
+        <div class="container">
+            <div class="swiper mySwiper5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="boxpadding">
+                            <div class="row">
+                                <div class="col-md-3 relative">
+                                    <img src="img/user-image-3.jpg" />
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>Riya Smily</h3>
+                                    <span>CEO @ Tema Security</span>
+                                </div>
+                            </div>
+                            <p>When it comes to website development and SEO, Blueket has been the best company I've
+                                worked with so far. We hired them for both of our businesses and have seen a drastic
+                                increase in our customer base.</p>
+                            <div class="d-flex">
+                                <a class="me-auto" href="#">
+                                    <img class="google" src="img/google.png" />
+                                </a>
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="boxpadding">
+                            <div class="row">
+                                <div class="col-md-3 relative">
+                                    <img src="img/user-image-3.jpg" />
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>Riya Smily</h3>
+                                    <span>CEO @ Tema Security</span>
+                                </div>
+                            </div>
+                            <p>When it comes to website development and SEO, Blueket has been the best company I've
+                                worked with so far. We hired them for both of our businesses and have seen a drastic
+                                increase in our customer base.</p>
+                            <div class="d-flex">
+                                <a class="me-auto" href="#">
+                                    <img class="google" src="img/google.png" />
+                                </a>
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="boxpadding">
+                            <div class="row">
+                                <div class="col-md-3 relative">
+                                    <img src="img/user-image-3.jpg" />
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>Riya Smily</h3>
+                                    <span>CEO @ Tema Security</span>
+                                </div>
+                            </div>
+                            <p>When it comes to website development and SEO, Blueket has been the best company I've
+                                worked with so far. We hired them for both of our businesses and have seen a drastic
+                                increase in our customer base.</p>
+                            <div class="d-flex">
+                                <a class="me-auto" href="#">
+                                    <img class="google" src="img/google.png" />
+                                </a>
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="boxpadding">
+                            <div class="row">
+                                <div class="col-md-3 relative">
+                                    <img src="img/user-image-3.jpg" />
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>Riya Smily</h3>
+                                    <span>CEO @ Tema Security</span>
+                                </div>
+                            </div>
+                            <p>When it comes to website development and SEO, Blueket has been the best company I've
+                                worked with so far. We hired them for both of our businesses and have seen a drastic
+                                increase in our customer base.</p>
+                            <div class="d-flex">
+                                <a class="me-auto" href="#">
+                                    <img class="google" src="img/google.png" />
+                                </a>
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="boxpadding">
+                            <div class="row">
+                                <div class="col-md-3 relative">
+                                    <img src="img/user-image-3.jpg" />
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>Riya Smily</h3>
+                                    <span>CEO @ Tema Security</span>
+                                </div>
+                            </div>
+                            <p>When it comes to website development and SEO, Blueket has been the best company I've
+                                worked with so far. We hired them for both of our businesses and have seen a drastic
+                                increase in our customer base.</p>
+                            <div class="d-flex">
+                                <a class="me-auto" href="#">
+                                    <img class="google" src="img/google.png" />
+                                </a>
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                                <img class="star" src="img/star-solid.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row sliderbottom">
+                <div class="col-md-4">
+                    <h3>Read More Review on</h3>
+                    <p>Read our client's testimonials all around the web.<br /> We deliver quality service that loves
+                        everyone.</p>
+                </div>
+                <div class="col-md-8 justify-content-center align-items-center d-flex">
+                    <img src="img/trustplot.svg" />
+                    <img src="img/trustplot.svg" />
+                    <img src="img/trustplot.svg" />
+                </div>
+            </div>
+        </div>
+        <div class="button-pad-small3">
+            <div class="button-next-small3"></div>
+        </div>
+        <div class="button-pad2-small3">
+            <div class="button-prev-small3"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section-8">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 justify-content-center align-items-center d-flex">
+                <img src="img/doubt.svg" />
+            </div>
+            <div class="col-md-7 padding-left">
+                <span class="subtitle4">Have a Doubt?</span>
+                <h2>Frequently Asked Question</h2>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="item-accordion mt-5">
+                        <h3 class="header-accordion" id="flush-headingOne">
+                            <a class="btn-accordion collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Why do I need a mobile-friendly website?
+                            </a>
+                        </h3>
+                        <div id="flush-collapseOne" class="collapse collapse" aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="body-accordion">This is the second item's accordion body. It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to style
+                                each element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                though the transition does limit overflow.</div>
+                        </div>
+                    </div>
+                    <div class="item-accordion mt-2">
+                        <h3 class="header-accordion" id="flush-headingTwo">
+                            <a class="btn-accordion collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Which Technology or Tools used for Website Designing?
+                            </a>
+                        </h3>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="body-accordion">This is the second item's accordion body. It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to style
+                                each element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                though the transition does limit overflow.</div>
+                        </div>
+                    </div>
+                    <div class="item-accordion mt-2">
+                        <h3 class="header-accordion" id="flush-headingThree">
+                            <a class="btn-accordion collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                What is the difference between custom and ready-to-use software?
+                            </a>
+                        </h3>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="body-accordion">This is the second item's accordion body. It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to style
+                                each element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                though the transition does limit overflow.</div>
+                        </div>
+                    </div>
+                    <div class="item-accordion mt-2">
+                        <h3 class="header-accordion" id="flush-headingFour">
+                            <a class="btn-accordion collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Which is the best custom software development company in India?</a>
+                        </h3>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="body-accordion">This is the second item's accordion body. It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to style
+                                each element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                though the transition does limit overflow.</div>
+                        </div>
+                    </div>
+                    <div class="item-accordion mt-2">
+                        <h3 class="header-accordion" id="flush-headingFour">
+                            <a class="btn-accordion collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                What are the RCM challenges faced by hospitals?</a>
+                        </h3>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="body-accordion">This is the second item's accordion body. It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to style
+                                each element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                though the transition does limit overflow.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footertopline">
+        <div class="row">
+            <div class="col-md-3">
+                <ul>
+                    <li class="limenu">Company Links</li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Media Coverage</a></li>
+                    <li><a href="#">Referral Program</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Client Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li class="limenu">Company Links</li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Media Coverage</a></li>
+                    <li><a href="#">Referral Program</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Client Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li class="limenu">Company Links</li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Media Coverage</a></li>
+                    <li><a href="#">Referral Program</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Client Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li class="limenu">Company Links</li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Media Coverage</a></li>
+                    <li><a href="#">Referral Program</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Client Testimonials</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbotline d-flex">
+            <p class="me-auto">© 2022 All Rights Reserved By &nbsp;<a class="afot" href="#">Separateweb</a></p>
+            <a href="#">Sitemap</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 5500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".button-next",
+            prevEl: ".button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
+
+<!-- Initialize Swiper2 -->
+<script>
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".button-next-small",
+            prevEl: ".button-prev-small",
+        },
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            clickable: true,
+        },
+    });
+</script>
+
+<!-- Initialize Swiper3 -->
+<script>
+    var swiper = new Swiper(".mySwiper3", {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        loop: true,
+        navigation: {
+            nextEl: ".button-next-small2",
+            prevEl: ".button-prev-small2",
+        },
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+
+<!-- Initialize Swiper4 -->
+<script>
+    var swiper = new Swiper(".mySwiper4", {
+        slidesPerView: 8,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+
+<!-- Initialize Swiper5 -->
+<script>
+    var swiper = new Swiper(".mySwiper5", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".button-next-small3",
+            prevEl: ".button-prev-small3",
+        },
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            clickable: true,
+        },
+    });
+</script>
+
+<!--sliding menu-->
+<script>
+    const navbar = document.getElementById('navbar')
+    const onScroll = () => {
+        const scroll = document.documentElement.scrollTop
+        if (scroll > 50) {
+            navbar.classList.add("active");
+        } else {
+            navbar.classList.remove("active")
+        }
+
+    }
+    window.addEventListener('scroll', onScroll)
+</script>
+
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
